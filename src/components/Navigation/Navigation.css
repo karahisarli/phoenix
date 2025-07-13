@@ -1,0 +1,160 @@
+.navigation {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #000000; /* Black background */
+  z-index: 50;
+  border-bottom: 2px solid #FFC107; /* Yellow accent border */
+}
+
+.nav-container {
+  max-width: 1152px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+}
+
+.nav-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.logo-img {
+  height: 3rem;
+  width: auto;
+  filter: brightness(0) invert(1); /* Makes black logo white */
+}
+
+.logo-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #FFFFFF; /* White text */
+}
+
+.logo-text-accent {
+  color: #FFC107; /* Yellow accent */
+}
+
+.nav-desktop {
+  display: none;
+  align-items: center;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .nav-desktop {
+    display: flex;
+  }
+}
+
+.nav-link {
+  font-weight: 500;
+  color: #FFFFFF;
+  transition: color 0.2s;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.nav-link:hover {
+  color: #FFC107; /* Yellow on hover */
+}
+
+.nav-language {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #FFFFFF;
+  transition: color 0.2s;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.nav-language:hover {
+  color: #FFC107;
+}
+
+.language-icon {
+  width: 1rem;
+  height: 1rem;
+}
+
+.nav-mobile-button {
+  display: block;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  color: #FFFFFF;
+}
+
+@media (min-width: 768px) {
+  .nav-mobile-button {
+    display: none;
+  }
+}
+
+.menu-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.nav-mobile {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: #000000;
+}
+
+@media (min-width: 768px) {
+  .nav-mobile {
+    display: none;
+  }
+}
+
+.nav-mobile-link {
+  width: 100%;
+  text-align: left;
+  font-weight: 500;
+  color: #FFFFFF;
+  transition: color 0.2s;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem 0;
+}
+
+.nav-mobile-link:hover {
+  color: #FFC107;
+}
+
+.nav-mobile-language {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #FFFFFF;
+  transition: color 0.2s;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem 0;
+}
+
+.nav-mobile-language:hover {
+  color: #FFC107;
+}

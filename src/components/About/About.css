@@ -1,0 +1,254 @@
+.about {
+  padding: 5rem 1.5rem;
+  position: relative;
+  background-color: #ffffff;
+  /* Remove overflow: hidden to allow sticky to work */
+}
+
+/* Map background - remove the full background */
+/* .about::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('../../assets/ulm-map.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.08;
+  z-index: 1;
+  pointer-events: none;
+} */
+
+/* Map as decorative side borders */
+.about::before,
+.about::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 300px;
+  background-image: url('../../assets/ulm-map.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.3; /* Increased from 0.15 for better visibility */
+  z-index: 0;
+  pointer-events: none;
+}
+
+.about::before {
+  left: 0;
+  background-position: left center;
+  mask-image: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+  -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+}
+
+.about::after {
+  right: 0;
+  background-position: right center;
+  mask-image: linear-gradient(to left, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+  -webkit-mask-image: linear-gradient(to left, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+}
+
+/* Mobile: hide map borders */
+@media (max-width: 768px) {
+  .about::before,
+  .about::after {
+    display: none;
+  }
+}
+
+.about-wrapper {
+  max-width: 72rem;
+  margin: 0 auto;
+  display: flex;
+  gap: 4rem;
+  align-items: flex-start;
+  position: relative;
+  z-index: 2;
+}
+
+/* Side slogan - hidden on mobile, visible on desktop */
+.about-side-slogan {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .about-side-slogan {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    position: sticky;
+    top: 5rem; /* Reduced from 8rem - adjust based on your navbar height */
+    height: fit-content;
+    align-self: flex-start; /* Important for sticky to work */
+    z-index: 3;
+  }
+  
+  .about-side-slogan span {
+    font-size: 2rem;
+    font-weight: 900;
+    color: #FFC107;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Alternative horizontal layout for side slogan */
+@media (min-width: 1280px) {
+  .about-side-slogan {
+    writing-mode: horizontal-tb;
+  }
+  
+  .about-side-slogan span {
+    writing-mode: horizontal-tb;
+    text-orientation: normal;
+    font-size: 1.5rem;
+  }
+}
+
+.about-container {
+  flex: 1;
+  max-width: 56rem;
+  position: relative;
+  z-index: 2;
+  /* Clean design without background box */
+  padding: 0 2rem;
+}
+
+/* Remove text styling that was added for the full background */
+.about-title,
+.about-subtitle,
+.about-paragraph {
+  /* Remove text-shadow */
+}
+
+.about-paragraph {
+  /* Remove gradient background */
+  margin: 0;
+}
+
+.about-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  .about-title {
+    font-size: 3rem;
+  }
+}
+
+.about-subtitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #374151;
+}
+
+@media (min-width: 768px) {
+  .about-subtitle {
+    font-size: 1.875rem;
+  }
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  font-size: 1.125rem;
+  line-height: 1.75;
+  color: #374151;
+  min-height: 100vh; /* Temporary - ensures enough height for sticky to work */
+}
+
+.about-paragraph {
+  margin: 0;
+}
+
+.about-intro {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.about-question {
+  font-weight: 500;
+}
+
+.about-cta {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #FFC107;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+/* Management Section */
+.about-management {
+  margin-top: 4rem;
+  padding-top: 3rem;
+  border-top: 2px solid #f3f4f6;
+}
+
+.management-title {
+  font-size: 1.75rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #111827;
+}
+
+.management-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+}
+
+@media (min-width: 768px) {
+  .management-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.management-member {
+  text-align: center;
+  max-width: 200px;
+}
+
+.management-image-container {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 1rem;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 3px solid #FFC107;
+}
+
+.management-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.management-name {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #111827;
+}
+
+.management-title-text {
+  font-size: 0.875rem;
+  color: #6b7280;
+  font-weight: 500;
+}
