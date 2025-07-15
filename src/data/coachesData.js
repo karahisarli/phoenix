@@ -5,43 +5,36 @@ export const coachesData = [
     id: 1,
     name: 'Rebecca',
     title: {
-      de: 'Head Coach',
-      en: 'Head Coach'
+      de: 'Coach',
+      en: 'Coach'
     },
     image: '/assets/coach-1.jpg',
     description: {
-      de: 'Trainer mit über 10 Jahren Erfahrung. Spezialisiert auf Olympic Lifting und Mobility. Max gründete Phoenix Athletics mit der Vision, eine unterstützende Fitness-Community aufzubauen.',
-      en: 'Trainer with over 10 years of experience. Specialized in Olympic Lifting and Mobility. Max founded Phoenix Athletics with the vision of building a supportive fitness community.'
+      de: 'Sport war schon immer ein wichtiger Bestandteil ihres Lebens. Als Coach möchte sie ihre Begeisterung für die Freude an Bewegung weitergeben, jeden kleinen Fortschritt feiern und vor allem gemeinsam Spaß haben.',
+      en: 'Sports have always been an important part of her life. As a coach, she wants to share her enthusiasm for the joy of movement, celebrate every small progress, and above all have fun together.'
     },
-    certifications: ['CrossFit L3', 'USAW L2', 'Mobility Specialist']
+    certifications: [
+      'CrossFit Level 1',
+      'CrossFit Level 2',
+      'Fitness B Lizenz',
+      'Athletiktrainerin',
+      'Personal Trainerin',
+      'Ernährungsberaterin'
+    ]
   },
   {
     id: 2,
     name: 'Sabrina',
     title: {
-      de: 'Coach & Ernährungsexpertin',
-      en: 'Coach & Nutrition Expert'
+      de: 'Coach',
+      en: 'Coach'
     },
     image: '/assets/coach-2.jpg',
     description: {
-      de: 'Leidenschaftliche Trainerin mit Fokus auf funktionelles Training und Ernährungsberatung. Sarah hilft unseren Mitgliedern, ihre Fitnessziele durch ganzheitliche Betreuung zu erreichen.',
-      en: 'Passionate trainer with focus on functional training and nutrition counseling. Sarah helps our members achieve their fitness goals through holistic support.'
+      de: 'Sabrina hat einen Masters Degree in Physiotherapie der Universität von Queensland (Australien) und viel Erfahrung darin, Bewegungsmuster zu analysieren und Verbesserungspotential zu erkennen. Functional Fitness ist seit vier Jahren ihre Leidenschaft - einiges durfte sie von CrossFit-Games-Athleten lernen. Zu coachen ist ihre Leidenschaft und es macht ihr viel Freude, wenn sie anderen helfen kann, ihre Technik zu verbessern.',
+      en: 'Sabrina holds a Masters Degree in Physiotherapy from the University of Queensland (Australia) and has extensive experience in analyzing movement patterns and identifying improvement potential. Functional Fitness has been her passion for four years - she had the opportunity to learn from CrossFit Games athletes. Coaching is her passion and she finds great joy in helping others improve their technique.'
     },
-    certifications: ['CrossFit L2', 'Nutrition Coach', 'First Aid']
-  },
-  {
-    id: 3,
-    name: 'Gexxe',
-    title: {
-      de: 'Coach & Ausdauer-Spezialist',
-      en: 'Coach & Endurance Specialist'
-    },
-    image: '/assets/coach-3.jpg',
-    description: {
-      de: 'Ehemaliger Leistungssportler und Lauftraining-Experte. Tom bringt seine Erfahrung aus dem Ausdauersport in unsere Lauf- und Konditionstrainings ein.',
-      en: 'Former competitive athlete and running training expert. Tom brings his experience from endurance sports to our running and conditioning training.'
-    },
-    certifications: ['CrossFit L2', 'Running Coach', 'Sports Science B.Sc.']
+    certifications: ['Masters in Physiotherapy - University of Queensland']
   }
 ];
 
