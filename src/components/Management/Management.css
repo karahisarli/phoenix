@@ -1,50 +1,50 @@
-.coaches {
+.management {
   padding: 5rem 1.5rem;
   background-color: #f9fafb;
 }
 
-.coaches-outer-wrapper {
+.management-outer-wrapper {
   max-width: 72rem;
   margin: 0 auto;
   position: relative;
 }
 
-.coaches-wrapper {
+.management-wrapper {
   display: flex;
   justify-content: center;
 }
 
-.coaches-container {
-  max-width: 48rem; /* Same as Contact section */
+.management-container {
+  max-width: 48rem;
   text-align: center;
 }
 
-.coaches-title {
+.management-title {
   font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 1rem;
 }
 
 @media (min-width: 768px) {
-  .coaches-title {
+  .management-title {
     font-size: 3rem;
   }
 }
 
-.coaches-subtitle {
+.management-subtitle {
   font-size: 1.25rem;
   color: #6b7280;
   margin-bottom: 4rem;
 }
 
-.coaches-list {
+.management-list {
   display: flex;
   flex-direction: column;
   gap: 4rem;
   align-items: center;
 }
 
-.coach-card {
+.management-card {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -56,12 +56,12 @@
   transition: transform 0.2s, box-shadow 0.2s;
 }
 
-.coach-card:hover {
+.management-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
 
-.coach-image-container {
+.management-image-container {
   width: 200px;
   height: 200px;
   margin-bottom: 2rem;
@@ -70,71 +70,53 @@
   border: 4px solid #FFC107;
 }
 
-.coach-image {
+.management-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.coach-info {
+.management-info {
   text-align: center;
   width: 100%;
 }
 
-.coach-name {
+.management-name {
   font-size: 1.75rem;
   font-weight: bold;
   margin-bottom: 0.5rem;
   color: #111827;
 }
 
-.coach-title {
+.management-role {
   font-size: 1.125rem;
   font-weight: 600;
   color: #FFC107;
   margin-bottom: 1.5rem;
 }
 
-.coach-description {
+.management-description {
   font-size: 1rem;
   line-height: 1.75;
   color: #4b5563;
-  margin-bottom: 1.5rem;
+  margin: 0;
 }
 
-.coach-certifications {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  justify-content: center;
-}
-
-.certification-badge {
-  background-color: #000000;
-  color: #FFC107;
-  padding: 0.25rem 0.75rem;
-  border-radius: 9999px;
-  font-size: 0.875rem;
-  font-weight: 500;
-}
-
-
-/* Remove extra large screen override to match About section sizing */
 @media (max-width: 640px) {
-  .coach-card {
+  .management-card {
     padding: 1.5rem;
   }
   
-  .coach-image-container {
+  .management-image-container {
     width: 150px;
     height: 150px;
   }
   
-  .coach-name {
+  .management-name {
     font-size: 1.5rem;
   }
   
-  .coach-description {
+  .management-description {
     font-size: 0.875rem;
   }
 }

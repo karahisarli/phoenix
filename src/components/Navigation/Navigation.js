@@ -11,6 +11,7 @@ const Navigation = ({ language, setLanguage, t, scrollToSection }) => {
       const sectionMap = {
   home: 'home',
   about: 'about',
+  management: 'management',
   coaches: 'coaches',  // Add this
   schedule: 'schedule',
   contact: 'contact'

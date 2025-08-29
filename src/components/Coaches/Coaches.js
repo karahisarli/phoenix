@@ -41,13 +41,6 @@ const Coaches = ({ t }) => {
             </div>
           </div>
         </div>
-        
-        {/* Slogan on the right side */}
-        <div className="coaches-side-slogan">
-          <span>Burn.</span>
-          <span>Rise.</span>
-          <span>Repeat.</span>
-        </div>
       </div>
     </section>
   );

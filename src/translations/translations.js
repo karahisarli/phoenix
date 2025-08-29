@@ -3,6 +3,7 @@ export const translations = {
     nav: {
       home: 'Home',
       about: 'Who We Are',
+      management: 'Our Board',
       coaches: 'Coaches',
       schedule: 'Schedule',
       contact: 'Contact'
@@ -32,6 +33,10 @@ export const translations = {
       title: 'Our Training Schedule',
       note: 'All classes are suitable for all fitness levels. First timers welcome!'
     },
+    management: {
+      title: 'Our Board',
+      subtitle: 'Meet the dedicated leadership team guiding Phoenix Athletics'
+    },
     coaches: {
       title: 'Our Coaches',
       subtitle: 'Meet the passionate team behind your fitness journey'
@@ -46,6 +51,7 @@ export const translations = {
     nav: {
       home: 'Startseite',
       about: 'Über Uns',
+      management: 'Vorstand',
       coaches: 'Coaches',
       schedule: 'Kursplan',
       contact: 'Kontakt'
@@ -74,6 +80,10 @@ export const translations = {
     schedule: {
       title: 'Unsere Trainingszeiten',
       note: 'Alle Kurse sind für alle Fitness-Level geeignet. Anfänger willkommen!'
+    },
+    management: {
+      title: 'Unser Vorstand',
+      subtitle: 'Lerne das engagierte Führungsteam kennen, das Phoenix Athletics leitet'
     },
     coaches: {
       title: 'Unsere Coaches',
