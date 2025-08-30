@@ -22,7 +22,7 @@ const Footer = () => {
         </div>
         <div className="footer-logo">
           <img src={logo} alt="Phoenix Athletics" className="footer-logo-img" />
-          <div className="footer-logo-text">Phoenix <span className="footer-logo-accent">Athletics</span></div>
+          <div className="footer-logo-text">Phoenix <span className="footer-logo-accent">Athletics e.V.</span></div>
         </div>
         <p className="footer-text">
           © 2025 Phoenix Athletics e.V. | Made with <Heart className="footer-heart" /> by our community
