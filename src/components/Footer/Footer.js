@@ -3,7 +3,7 @@ import { Heart } from 'lucide-react';
 import logo from '../../assets/logo.png';
 import './Footer.css';
 
-const Footer = () => {
+const Footer = ({ t }) => {
   const slogans = ['Together We Rise!', 'Burn. Rise. Repeat.'];
   const [currentSlogan, setCurrentSlogan] = useState(0);
 
@@ -27,6 +27,16 @@ const Footer = () => {
         <p className="footer-text">
           © 2025 Phoenix Athletics e.V. | Made with <Heart className="footer-heart" /> by our community
         </p>
+
+        {/* Download Links */}
+        <div className="footer-downloads">
+          <a href="/assets/docs/satzung.pdf" className="footer-download-link" download>
+            {t.footer.bylaws}
+          </a>
+          <a href="/assets/docs/beitragsordnung.pdf" className="footer-download-link" download>
+            {t.footer.membershipFeeRegulations}
+          </a>
+        </div>
       </div>
     </footer>
   );

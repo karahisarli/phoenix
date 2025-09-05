@@ -33,7 +33,7 @@ const App = () => {
 <Coaches t={t} />        {/* Right-side slogan */}
 <Schedule t={t} />       {/* No slogan - clean break */}
 <Contact t={t} />
-<Footer />
+<Footer t={t} />
     </div>
   );
 };
