@@ -49,6 +49,20 @@ export const coachesData = [
       en: 'As a Master Athletics ultra-combined athlete, Hyrox participant and ultra-long-distance hiker, his focus is on sprinting, running, jogging, Nordic walking and walking. Almost all muscle groups are engaged, and functional training provides excellent support. Even in bad weather, there\'s always a training that matches the mood and motivation. Once you\'re on the way or in training, it gets easier.'
     },
     certifications: []
+  },
+  {
+    id: 4,
+    name: 'Vio',
+    title: {
+      de: 'Coach',
+      en: 'Coach'
+    },
+    image: '/assets/vio.jpg',
+    description: {
+      de: 'N/A',
+      en: 'N/A'
+    },
+    certifications: []
   }
 ];
 

@@ -1,5 +1,9 @@
 export const translations = {
   en: {
+    footer: {
+      bylaws: 'Bylaws',
+      membershipFeeRegulations: 'Membership Fee Regulations'
+    },
     nav: {
       home: 'Home',
       about: 'Who We Are',
@@ -48,6 +52,10 @@ export const translations = {
     }
   },
   de: {
+    footer: {
+      bylaws: 'Satzung',
+      membershipFeeRegulations: 'Beitragsordnung'
+    },
     nav: {
       home: 'Startseite',
       about: 'Über Uns',

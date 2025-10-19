@@ -15,7 +15,7 @@ const Schedule = ({ t }) => {
       de: 'Dienstag',
       en: 'Tuesday',
       classes: [
-        { time: '17:30', name: 'Mobility', icon: Heart, color: 'text-green-500' }
+        { time: '17:30', name: 'Functional Fitness', icon: Dumbbell, color: 'text-orange-500' }
       ]
     },
     wednesday: {
@@ -40,7 +40,9 @@ const Schedule = ({ t }) => {
     saturday: {
       de: 'Samstag',
       en: 'Saturday',
-      classes: []
+      classes: [
+        { time: '11:30', name: 'Team WOD', icon: Users, color: 'text-orange-500' }
+      ]
     },
     sunday: {
       de: 'Sonntag',
