@@ -27,19 +27,17 @@ const Footer = ({ t }) => {
         <p className="footer-text">
           © 2025 Phoenix Athletics e.V. | Made with <Heart className="footer-heart" /> by our community
         </p>
-        <div className="footer-impressum">
-          <a href="/imprint" className="footer-impressum-link">{t.footer.imprint}</a>
-        </div>
-        {/* Download Links */}
-        <div className="footer-downloads">
-          <a href="/assets/docs/satzung.pdf" className="footer-download-link" download>
-            {t.imprint.title}
+        <div className="footer-content">
+          <a href="/imprint" className="footer-link">{t.imprint.title}</a>
+          |
+          <a href="/assets/docs/satzung.pdf" className="footer-link" download>
+            {t.footer.bylaws}
           </a>
-          <a href="/assets/docs/beitragsordnung.pdf" className="footer-download-link" download>
+          |
+          <a href="/assets/docs/beitragsordnung.pdf" className="footer-link" download>
             {t.footer.membershipFeeRegulations}
           </a>
         </div>
-
       </div>
     </footer>
   );

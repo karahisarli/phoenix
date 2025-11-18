@@ -16,7 +16,6 @@ export const translations = {
         footer: {
             bylaws: 'Bylaws',
             membershipFeeRegulations: 'Membership Fee Regulations',
-            imprint: 'Imprint'
         },
         nav: {
             home: 'Home',
