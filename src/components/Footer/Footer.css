@@ -78,3 +78,19 @@
   background-color: #e6ac00; /* Etwas dunkleres Gelb */
   transform: translateY(-2px);
 }
+
+.footer-impressum {
+  text-align: center;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.footer-impressum-link {
+  font-size: 0.8rem;
+  color: #ccc;
+  text-decoration: none;
+}
+
+.footer-impressum-link:hover {
+  text-decoration: underline;
+}
